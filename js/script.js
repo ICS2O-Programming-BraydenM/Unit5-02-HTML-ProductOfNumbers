@@ -5,23 +5,23 @@
 
 "use strict"
 
- // This function displays the result of a product using a for loop and addition instead of multiplication 
-function displayNumbers() {
+ // This function displays the result of a product of two positive integers using a for loop with addition instead of multiplication 
+function displayProduct() {
 	
 	// get the two positive integers from the user 
 	let firstNum = parseInt(document.getElementById('firstNum').value);
 
   let secondNum = parseInt(document.getElementById('secondNum').value);
 
-	// initialize numbers as an empty string
-	let numbers = 0;
+	// initialize product as zero
+	let product = 0;
 
   // use a for loop to calculate product of two positive integers solely using addition 
 	for (let counter = 1; counter <= secondNum; counter++) {
 
-    numbers = numbers + firstNum
+    product = product + firstNum
   }
 
-  	// return the string of numbers back to user
-  	document.getElementById('display-results').innerHTML = "The product of these two positive integers is " + numbers
+  	// return the result back to user
+  	document.getElementById('display-results').innerHTML = "The product of these two positive integers is " + product
 }
