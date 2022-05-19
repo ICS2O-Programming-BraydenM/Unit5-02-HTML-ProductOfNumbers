@@ -5,9 +5,7 @@
 
 "use strict"
 
-/**
- * This function displays all even numbers between a set min number and a set max number 
- */
+ // This function displays the result of a product using a for loop and addition instead of multiplication 
 function displayNumbers() {
 	
 	// get the two positive integers from the user 
@@ -15,22 +13,15 @@ function displayNumbers() {
 
   let secondNum = parseInt(document.getElementById('secondNum').value);
 
-  // initialize the counter to the min number 
-	let counter = firstNum;
 	// initialize numbers as an empty string
-	let numbers = "";
+	let numbers = 0;
 
   // use a for loop to calculate product of two positive integers solely using addition 
-	for (let counter = 0; counter <= firstNum; counter++) {
+	for (let counter = 1; counter <= secondNum; counter++) {
 
-
-    numbers = numbers + counter + "<br>"
+    numbers = numbers + firstNum
   }
 
-		// increment the counter
-		counter = counter +1
-	}
-
   	// return the string of numbers back to user
-  	document.getElementById('display-results').innerHTML = numbers
+  	document.getElementById('display-results').innerHTML = "The product of these two positive integers is " + numbers
 }

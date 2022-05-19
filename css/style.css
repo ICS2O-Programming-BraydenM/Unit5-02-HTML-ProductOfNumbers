@@ -15,8 +15,16 @@ h1 {
 	text-align: center;
 }
 
+label {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
 p {
-	background-color: #b7f486;
+	color: #b7f486;
 }
 
 div {
